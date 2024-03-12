@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 interface Componente {
   icon: string;
   name: string;
@@ -20,9 +21,19 @@ export class InicioPage implements OnInit {
       redirectTo: '/action-sheet'
     },
     { 
-      icon: 'logo-apple-appstore',
+      icon: 'alert-circle-outline',
       name: 'Alert',
       redirectTo: '/alert'
+    },
+    { 
+      icon: 'beaker-outline',
+      name: 'Avatar',
+      redirectTo: '/avatar'
+    },
+    { 
+      icon: 'color-filter-outline',
+      name: 'Otros',
+      redirectTo: '/otros'
     }
   ]
 
@@ -31,4 +42,5 @@ export class InicioPage implements OnInit {
   ngOnInit() {
   }
 
+ 
 }

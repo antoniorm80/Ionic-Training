@@ -5,4 +5,87 @@
       <ion-title size="large">alert</ion-title>
     </ion-toolbar>
   </ion-header>
+
+  <ion-note>Default Note</ion-note>
+  <ion-note color="primary">Primary Note</ion-note>
+  <ion-note color="secondary">Secondary Note</ion-note>
+  <ion-note color="tertiary">Tertiary Note</ion-note>
+  <ion-note color="success">Success Note</ion-note>
+  <ion-note color="warning">Warning Note</ion-note>
+  <ion-note color="danger">Danger Note</ion-note>
+  <ion-note color="light">Light Note</ion-note>
+  <ion-note color="medium">Medium Note</ion-note>
+  <ion-note color="dark">Dark Note</ion-note>
+
+  <ion-list>
+    <ion-item-group>
+      <ion-item-divider>
+        <ion-label> Section A </ion-label>
+      </ion-item-divider>
+  
+      <ion-item>
+        <ion-label>A1</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>A2</ion-label>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-label>A3</ion-label>
+      </ion-item>
+    </ion-item-group>
+  
+    <ion-item-group>
+      <ion-item-divider>
+        <ion-label> Section B </ion-label>
+      </ion-item-divider>
+  
+      <ion-item>
+        <ion-label>B1</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>B2</ion-label>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-label>B3</ion-label>
+      </ion-item>
+    </ion-item-group>
+  </ion-list>
+  <ion-thumbnail>
+    <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
+  </ion-thumbnail>
+  <ion-button id="present-alert">Click Me</ion-button>
+<ion-alert
+  trigger="present-alert"
+  header="A Short Title Is Best"
+  subHeader="A Sub Header Is Optional"
+  message="A message should be a short, complete sentence."
+  [buttons]="alertButtons"
+></ion-alert>
+
+<ion-list>
+  <ion-item>
+    <ion-label>Followers</ion-label>
+    <ion-badge color="primary">22k</ion-badge>
+  </ion-item>
+  <ion-item>
+    <ion-label>Likes</ion-label>
+    <ion-badge color="secondary">118k</ion-badge>
+  </ion-item>
+  <ion-item>
+    <ion-label>Stars</ion-label>
+    <ion-badge color="tertiary">34k</ion-badge>
+  </ion-item>
+  <ion-item>
+    <ion-label>Completed</ion-label>
+    <ion-badge color="success">80</ion-badge>
+  </ion-item>
+  <ion-item>
+    <ion-label>Warnings</ion-label>
+    <ion-badge color="warning">70</ion-badge>
+  </ion-item>
+  <ion-item>
+    <ion-label>Notifications</ion-label>
+    <ion-badge color="danger">1000</ion-badge>
+  </ion-item>
+</ion-list>
 </ion-content>
