@@ -27,6 +27,18 @@ const routes: Routes = [
     path: 'otros',
     loadChildren: () => import('./pages/otros/otros.module').then( m => m.OtrosPageModule)
   },
+  {
+    path: 'button',
+    loadChildren: () => import('./pages/button/button.module').then( m => m.ButtonPageModule)
+  },
+  {
+    path: 'card',
+    loadChildren: () => import('./pages/card/card.module').then( m => m.CardPageModule)
+  },
+  {
+    path: 'check',
+    loadChildren: () => import('./pages/check/check.module').then( m => m.CheckPageModule)
+  },
 ];
 
 @NgModule({
